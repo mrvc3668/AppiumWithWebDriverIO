@@ -1,0 +1,27 @@
+{
+  "name": "webdriverioappium",
+  "version": "1.0.0",
+  "description": "webdriverio appium android mobile test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio wdio.conf.js",
+    "report": "npx allure generate allure-results --clean && npx allure open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/appium-service": "^8.38.2",
+    "@wdio/cli": "^8.38.2",
+    "@wdio/local-runner": "^8.38.2",
+    "@wdio/mocha-framework": "^8.38.2",
+    "@wdio/spec-reporter": "^8.38.2",
+    "allure-commandline": "^2.29.0",
+    "appium-uiautomator2-driver": "^3.5.2",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.38.2"
+  }
+}
